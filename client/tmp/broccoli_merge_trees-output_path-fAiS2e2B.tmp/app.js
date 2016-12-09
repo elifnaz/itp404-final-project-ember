@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/app/app.js

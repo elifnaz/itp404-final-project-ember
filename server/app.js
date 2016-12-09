@@ -17,7 +17,7 @@ var sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   host: 'sql3.freemysqlhosting.net'
 });
 
-var Restaurant = sequelize.define('restaurant',  {
+var Restaurant = sequelize.define('restaurant',  
   name: {
     type: Sequelize.STRING
   },
@@ -65,6 +65,21 @@ app.post('/api/mylist', function(request, response) {
   });
   restaurant.save().then(function(restaurant) {
     response.json(restaurant);
+  });
+});
+
+app.delete('/api/mylist/:id', function(request, response) {
+  Restaurant.findById(request.params.id).then(function(restaurant) {
+    console.log(restaurant);
+    if(restaurant) {
+      restaurant.destroy().then(function(restaurant) {
+        response.json(restaurant);
+      });
+    } else {
+      response.status(404).json({
+        message: 'Restaurant not found'
+      });
+    }
   });
 });
 

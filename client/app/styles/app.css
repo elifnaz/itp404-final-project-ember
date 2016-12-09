@@ -15,7 +15,7 @@ body {
   margin: auto;
 }
 .fav {
-  border-top: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
 }
 h1 {
   font-size: 60px;
@@ -36,7 +36,14 @@ form {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.must-eats {
+  width: 70%;
+  margin: auto;
+}
+.newRes .row {
+  padding-top: 4%;
 
+}
 body {
 	font-family: sans-serif;
 }

@@ -1,0 +1,86 @@
+/** navbar **/
+.navbar.transparent .navbar-inner {
+  background: rgba(0,0,0,0);
+}
+body {
+  min-height: 600px;
+  /*font-family: 'Abril Fatface', cursive;*/
+  background-color: #FFFFFF;
+  /*border: 10px solid black;*/
+}
+.list {
+  /*background-color: gray;*/
+  padding: 2%;
+  width: 70%;
+  margin: auto;
+}
+.fav {
+  border-bottom: 2px solid lightgrey;
+}
+h1 {
+  font-size: 60px;
+  color: black;
+}
+h2 {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.main {
+  padding-top: 2%;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+form {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+body {
+	font-family: sans-serif;
+}
+.panel {
+  align-items: center!important;
+  width: 100%;
+  border: 5px solid black;
+  padding: 1em;
+}
+ul li {
+	/*display: inline-block;*/
+}
+ul li:hover  {
+  color: white;
+	background-color: black;
+}
+a {
+	text-decoration: none;
+	color: grey;
+}
+
+/*for typed.js blinking cursor*/
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

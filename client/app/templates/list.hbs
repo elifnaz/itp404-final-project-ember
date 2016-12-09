@@ -1,7 +1,24 @@
 {{outlet}}
 <h2>Must Eats</h2>
-  {{#each model.restaurants as |restaurant|}}
-  <div class="list fav">
-    {{restaurant.name}}, {{restaurant.city}}
+<div class="row must-eats">
+  <div class="col-md-4">
+    <form class="newRes" onsubmit={{action 'addRestaurant'}}>
+	     <div class="row">
+         {{input type="text" placeholder="Restaurant name" value=name}}
+       </div>
+       <div class="row">
+       {{input type="text" placeholder="City" value=city}}
+       </div>
+       <div class="row">
+	      <button type="submit" class="btn-danger">Add Restaurant</button>
+        </div>
+    </form>
   </div>
-  {{/each}}
+  <div class="col-md-8">
+    {{#each model.restaurants as |restaurant|}}
+    <div class="list fav">
+      {{restaurant.name}}, {{restaurant.city}}
+    </div>
+    {{/each}}
+  </div>
+</div>

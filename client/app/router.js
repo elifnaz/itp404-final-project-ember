@@ -10,9 +10,7 @@ Router.map(function() {
   this.route('search', function() {
     this.route('results', { path: ':term' });
   });
-  this.route('list', function() {
-    this.route('new');
-  });
+  this.route('list', function() {});
 });
 
 export default Router;

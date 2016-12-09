@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/broccoli_merge_trees-input_base_path-G7OSUoDl.tmp/0/itpfin/tests/acceptance/restaurants-test.js

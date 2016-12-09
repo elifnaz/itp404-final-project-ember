@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ENV from 'itpfin/config/environment'
 
 export default Ember.Component.extend({
   classNames: ['restaurant'],
@@ -17,9 +18,10 @@ export default Ember.Component.extend({
       var city = this.get('restaurant.location.city');
       console.log(name);
       console.log(city);
+      var endPT =  ENV.APP.apiEndpoint;
         Ember.$.ajax({
 					type:'post',
-					url: 'http://localhost:3000/api/mylist',
+					url: endPT + '/api/mylist',
 					data: {
 						name: name,
             city: city

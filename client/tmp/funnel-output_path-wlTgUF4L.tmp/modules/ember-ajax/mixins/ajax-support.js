@@ -1,0 +1,1 @@
+/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-nS3hFCS1.tmp/mixins/ajax-support.js

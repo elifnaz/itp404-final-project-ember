@@ -1,10 +1,10 @@
 var Yelp = require('yelp');
 
 var yelp = new Yelp({
-  consumer_key: '9p0SdHdtyY5v3q_3TiaHPg',
-  consumer_secret: 'XR7qhfs-YHzvO0sYOLYPRWNRiO0',
-  token: 'z4UjYgRnXBuRLW2LcS7k_BzPOGEgO-TS',
-  token_secret: 's3GN55jW72SoGjqpj5Rk_OeVqpo',
+  consumer_key: process.env.consumer_key,
+  consumer_secret: process.env.consumer_secret,
+  token: process.env.token,
+  token_secret: process.env.token_secret,
 });
 
 module.exports = {

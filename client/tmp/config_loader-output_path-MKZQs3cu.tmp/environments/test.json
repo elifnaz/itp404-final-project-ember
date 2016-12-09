@@ -1,1 +1,0 @@
-{"modulePrefix":"itpfin","environment":"test","rootURL":"/","locationType":"none","EmberENV":{"FEATURES":{}},"APP":{"LOG_ACTIVE_GENERATION":false,"LOG_VIEW_LOOKUPS":false,"rootElement":"#ember-testing","name":"itpfin","version":"0.0.0+89dde4bb"},"ember-cli-mirage":{"usingProxy":false,"useDefaultPassthroughs":true},"exportApplicationGlobal":true}

@@ -5,12 +5,6 @@ export default Ember.Route.extend({
   model: function(params) {
     var term = params.term;
     var loc = params.location;
-    if (term == null) {
-      term = 'pizza';
-    }
-    if (loc == null) {
-      loc = 'random';
-    }
     var url = 'http://localhost:3000/search/' + term + '/' + loc;
     var promise = Ember.$.ajax({
       type: 'get',

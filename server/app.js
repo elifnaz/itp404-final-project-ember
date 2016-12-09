@@ -1,5 +1,5 @@
-// var dotenv = require('dotenv');
-// dotenv.config(); // read in .env file and parse it
+var dotenv = require('dotenv');
+dotenv.config(); // read in .env file and parse it
 
 var express = require('express');
 var app = express()
@@ -8,9 +8,9 @@ var cors = require('cors');
 var bodyParser = require('body-parser');
 var randomZip = require('random-zipcode');
 
-var DB_NAME = 'sql3147699';
-var DB_USER = 'sql3147699';
-var DB_PASSWORD = '4d2tapT9dy';
+var DB_NAME = process.env.DB_NAME;
+var DB_USER = process.env.DB_USER;
+var DB_PASSWORD = process.env.DB_PASSWORD;
 
 var sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   dialect: 'mysql',

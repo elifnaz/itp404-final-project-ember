@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "random-zipcode": "^1.0.2",
+    "yelp": "^1.0.1"
+  }
+}

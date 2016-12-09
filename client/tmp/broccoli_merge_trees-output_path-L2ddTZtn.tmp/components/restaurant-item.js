@@ -1,0 +1,1 @@
+/Users/elifnazelo/itpfin/client/app/components/restaurant-item.js

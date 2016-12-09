@@ -1,0 +1,1 @@
+export { default } from 'ember-typed/components/typed-string';

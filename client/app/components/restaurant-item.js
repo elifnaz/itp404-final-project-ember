@@ -5,6 +5,9 @@ export default Ember.Component.extend({
   isPopular: Ember.computed('restaurant.review_count', function() {
     return (this.get('restaurant.review_count') > 300);
   }),
+  hasComments: Ember.computed('restaurant.snippet_text', function() {
+    return (this.get('restaurant.snippet_text') != null);
+  }),
 
   actions: {
 

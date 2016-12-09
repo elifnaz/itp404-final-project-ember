@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
       console.log('added restaurant');
       var name = this.get('name');
       var city = this.get('city');
-      if (name === '' || city === '') {
+      if (name == null || city == null) {
         alert("You must fill out all values!");
       }
       else {

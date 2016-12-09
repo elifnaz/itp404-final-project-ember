@@ -8,7 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('search', function() {
-    this.route('results', { path: ':term' });
+    this.route('results', { path: ':term/:location'});
   });
   this.route('list', function() {});
 });

@@ -17,7 +17,7 @@ var sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
   host: 'sql3.freemysqlhosting.net'
 });
 
-var Restaurant = sequelize.define('restaurant',  
+var Restaurant = sequelize.define('restaurant', {
   name: {
     type: Sequelize.STRING
   },
@@ -40,9 +40,15 @@ var yelp = require('./api/yelp');
 app.use(cors());
 app.use(bodyParser());
 
-app.get('/search/:s', function(request, response) {
-  var randomLocation = randomZip(true);
-  yelp.search({ term: request.params.s, location: randomLocation}).then(function(results) {
+app.get('/search/:s/:l', function(request, response) {
+  var loc = request.params.l;
+  var food = request.params.s;
+
+  // if feeling lucky button is clicked or loc is null, a random zip code is generated
+  if (loc === 'random') {
+    loc = randomZip(true);
+  }
+  yelp.search({ term: food, location: loc}).then(function(results) {
     response.json(results);
   }, function(err) {
     response.json(err);
@@ -68,19 +74,19 @@ app.post('/api/mylist', function(request, response) {
   });
 });
 
-app.delete('/api/mylist/:id', function(request, response) {
-  Restaurant.findById(request.params.id).then(function(restaurant) {
-    console.log(restaurant);
-    if(restaurant) {
-      restaurant.destroy().then(function(restaurant) {
-        response.json(restaurant);
-      });
-    } else {
-      response.status(404).json({
-        message: 'Restaurant not found'
-      });
-    }
-  });
-});
+// app.delete('/api/mylist/:id', function(request, response) {
+//   Restaurant.findById(request.params.id).then(function(restaurant) {
+//     console.log(restaurant);
+//     if(restaurant) {
+//       restaurant.destroy().then(function(restaurant) {
+//         response.json(restaurant);
+//       });
+//     } else {
+//       response.status(404).json({
+//         message: 'Restaurant not found'
+//       });
+//     }
+//   });
+// });
 
 app.listen(3000);

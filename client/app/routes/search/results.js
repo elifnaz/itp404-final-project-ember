@@ -3,12 +3,19 @@ import Ember from 'ember';
 export default Ember.Route.extend({
 
   model: function(params) {
-    var url = 'http://localhost:3000/search/' + params.term;
+    var term = params.term;
+    var loc = params.location;
+    if (term == null) {
+      term = 'pizza';
+    }
+    if (loc == null) {
+      loc = 'random';
+    }
+    var url = 'http://localhost:3000/search/' + term + '/' + loc;
     var promise = Ember.$.ajax({
       type: 'get',
       url: url
     });
-
     return promise;
   }
 });

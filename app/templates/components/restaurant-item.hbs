@@ -1,0 +1,13 @@
+  <div class="panel">
+    <h3><b>{{restaurant.name}}</b></h3>
+    <p>{{#if isPopular}}
+      <img style="width: 20px;" src="https://www.emojibase.com/resources/img/emojis/apple/x1f525.png.pagespeed.ic.62QVMlIn1k.png" alt=""/>
+    {{/if}}</p>
+    <p><b># of reviews: </b>
+    {{restaurant.review_count}}</p>
+    <p><b>Rating: <img src={{restaurant.rating_img_url_small}} /> </b></p>
+    <p><b>Address: </b>
+    {{restaurant.location.address}}, {{restaurant.location.state_code}}</p>
+    {{!-- <img src={{restaurant.image_url}} /> --}}
+    <button type="button" class="btn btn-outline-danger"onClick={{action "addToList"}}>Add to list</button>
+  </div>

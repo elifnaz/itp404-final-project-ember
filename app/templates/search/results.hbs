@@ -1,0 +1,9 @@
+<ul>
+  {{#each model.businesses as |result|}}
+
+          {{#restaurant-item restaurant=result}}{{/restaurant-item}}
+
+  {{/each}}
+</ul>
+
+{{outlet}}

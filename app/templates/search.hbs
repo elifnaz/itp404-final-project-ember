@@ -1,0 +1,10 @@
+<div class="main">
+  <h1>{{typed-string strings=typedStrings typeSpeed=0}}</h1>
+<form onSubmit={{action "search"}}>
+  {{input type="text" value=searchTerm}}
+  {{!-- MADE IT RANDOM INSTEAD {{input type="text" value=zipcode}} --}}
+  <button type="button" class="btn btn-outline-danger">Search</button>
+</form>
+</div>
+
+{{outlet}}

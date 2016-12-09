@@ -1,0 +1,12 @@
+{{outlet}}
+
+<h2>Must Eats</h2>
+<ul>
+  {{#each model as |restaurant|}}
+      <li>
+        <h4><b>{{restaurant.name}}</b></h4>
+      </li>
+      {{!-- <h5>{{restaurant.city}}</h5> --}}
+  {{/each}}
+
+</ul>

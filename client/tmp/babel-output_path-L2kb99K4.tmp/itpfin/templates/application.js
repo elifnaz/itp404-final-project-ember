@@ -7,12 +7,12 @@ define("itpfin/templates/application", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 18,
-              "column": 0
+              "line": 17,
+              "column": 10
             },
             "end": {
-              "line": 18,
-              "column": 25
+              "line": 17,
+              "column": 35
             }
           },
           "moduleName": "itpfin/templates/application.hbs"
@@ -42,12 +42,12 @@ define("itpfin/templates/application", ["exports"], function (exports) {
           "loc": {
             "source": null,
             "start": {
-              "line": 21,
-              "column": 0
+              "line": 20,
+              "column": 10
             },
             "end": {
-              "line": 21,
-              "column": 28
+              "line": 20,
+              "column": 38
             }
           },
           "moduleName": "itpfin/templates/application.hbs"
@@ -80,7 +80,7 @@ define("itpfin/templates/application", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 28,
+            "line": 27,
             "column": 0
           }
         },
@@ -151,14 +151,14 @@ define("itpfin/templates/application", ["exports"], function (exports) {
         var el3 = dom.createElement("div");
         dom.setAttribute(el3, "class", "collapse navbar-collapse");
         dom.setAttribute(el3, "id", "bs-example-navbar-collapse-1");
-        var el4 = dom.createTextNode("\n\n      ");
+        var el4 = dom.createTextNode("\n      ");
         dom.appendChild(el3, el4);
         var el4 = dom.createElement("ul");
         dom.setAttribute(el4, "class", "nav navbar-nav navbar-right");
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("li");
-        var el6 = dom.createTextNode("\n");
+        var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
         var el6 = dom.createComment("");
         dom.appendChild(el5, el6);
@@ -168,7 +168,7 @@ define("itpfin/templates/application", ["exports"], function (exports) {
         var el5 = dom.createTextNode("\n        ");
         dom.appendChild(el4, el5);
         var el5 = dom.createElement("li");
-        var el6 = dom.createTextNode("\n");
+        var el6 = dom.createTextNode("\n          ");
         dom.appendChild(el5, el6);
         var el6 = dom.createComment("");
         dom.appendChild(el5, el6);
@@ -207,7 +207,7 @@ define("itpfin/templates/application", ["exports"], function (exports) {
         morphs[2] = dom.createMorphAt(fragment, 2, 2, contextualElement);
         return morphs;
       },
-      statements: [["block", "link-to", ["search"], [], 0, null, ["loc", [null, [18, 0], [18, 37]]]], ["block", "link-to", ["list"], [], 1, null, ["loc", [null, [21, 0], [21, 40]]]], ["content", "outlet", ["loc", [null, [27, 0], [27, 10]]], 0, 0, 0, 0]],
+      statements: [["block", "link-to", ["search"], [], 0, null, ["loc", [null, [17, 10], [17, 47]]]], ["block", "link-to", ["list"], [], 1, null, ["loc", [null, [20, 10], [20, 50]]]], ["content", "outlet", ["loc", [null, [26, 0], [26, 10]]], 0, 0, 0, 0]],
       locals: [],
       templates: [child0, child1]
     };

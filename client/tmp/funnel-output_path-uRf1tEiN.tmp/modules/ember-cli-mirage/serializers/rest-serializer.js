@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-PuMybP83.tmp/serializers/rest-serializer.js

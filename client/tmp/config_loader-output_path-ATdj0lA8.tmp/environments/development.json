@@ -1,0 +1,1 @@
+{"modulePrefix":"itpfin","environment":"development","rootURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"apiEndpoint":"http://localhost:3000","name":"itpfin","version":"0.0.0+997ebb51"},"ember-cli-mirage":{"enabled":false,"usingProxy":false,"useDefaultPassthroughs":true},"exportApplicationGlobal":true}

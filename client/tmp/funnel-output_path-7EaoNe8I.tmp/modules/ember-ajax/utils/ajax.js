@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-imn4ubiW.tmp/utils/ajax.js

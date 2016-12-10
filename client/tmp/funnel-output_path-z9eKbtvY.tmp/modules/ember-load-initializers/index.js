@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-jryG0x7U.tmp/index.js

@@ -7,7 +7,7 @@ export default Ember.Route.extend({
     var term = params.term;
     var loc = params.location;
     var endPT =  ENV.APP.apiEndpoint;
-    var url = endPT + '/' + term + '/' + loc;
+    var url = endPT + '/api/search/' + term + '/' + loc;
     var promise = Ember.$.ajax({
       type: 'get',
       url: url

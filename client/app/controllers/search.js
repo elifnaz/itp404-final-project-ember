@@ -9,10 +9,10 @@ export default Ember.Controller.extend({
       console.log('form submitted');
       var searchTerm = this.get('searchTerm');
       var location = this.get('location');
-      if (searchTerm == null) {
+      if (searchTerm == null || searchTerm.trim() == '') {
         searchTerm = 'pizza';
       }
-      if (location == null) {
+      if (location == null || location.trim() == '') {
         location = 'random';
       }
       this.transitionToRoute('search.results', searchTerm, location);
@@ -21,8 +21,7 @@ export default Ember.Controller.extend({
       e.preventDefault();
       console.log('random form submitted');
       var searchTerm = this.get('searchTerm');
-      if (searchTerm == null) {
-        console.log(null);
+      if (searchTerm == null || searchTerm.trim() == '') {
         searchTerm = 'pizza';
       }
       this.transitionToRoute('search.results', searchTerm, 'random');

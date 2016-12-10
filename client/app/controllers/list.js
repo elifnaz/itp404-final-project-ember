@@ -12,6 +12,7 @@ export default Ember.Controller.extend({
         alert("You must fill out all values!");
       }
       else {
+        var controller = this;
         var endPT =  ENV.APP.apiEndpoint;
         Ember.$.ajax({
 					type:'post',
@@ -20,9 +21,15 @@ export default Ember.Controller.extend({
 						name: name,
             city: city
 					}
-				});
+				}).then(function(response) {
+          controller.set('name', null);
+          controller.set('city', null);
+          var restaurants = controller.get('model.restaurants');
+          // restaurants.push(response);
+          var newRestaurants = restaurants.concat(response);
+          controller.set('model.restaurants', newRestaurants);
+        });
       }
-      // this.transitionToRoute('search.results', searchTerm);
     }
   }
 });

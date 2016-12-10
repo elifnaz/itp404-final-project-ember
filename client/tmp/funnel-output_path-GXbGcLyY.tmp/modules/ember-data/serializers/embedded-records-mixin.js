@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-hrnQ7Tc3.tmp/serializers/embedded-records-mixin.js

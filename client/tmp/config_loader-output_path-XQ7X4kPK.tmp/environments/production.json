@@ -1,1 +1,0 @@
-{"modulePrefix":"itpfin","environment":"production","rootURL":"/","locationType":"auto","EmberENV":{"FEATURES":{}},"APP":{"apiEndpoint":"https://food-picker.herokuapp.com","name":"itpfin","version":"0.0.0+0fc76318"},"ember-cli-mirage":{"usingProxy":false,"useDefaultPassthroughs":true},"exportApplicationGlobal":false}

@@ -8,10 +8,27 @@ export default function() {
     Note: these only affect routes defined *after* them!
   */
 
-  // this.urlPrefix = '';    // make this `http://localhost:8080`, for example, if your API is on a different server
-  // this.namespace = '';    // make this `api`, for example, if your API is namespaced
+  this.urlPrefix = 'http://localhost:3000';    // make this `http://localhost:8080`, for example, if your API is on a different server
+  this.namespace = 'api';    // make this `api`, for example, if your API is namespaced
   // this.timing = 400;      // delay for each request, automatically set to 0 during testing
 
+  this.get('/mylist', function(schema){
+    return {
+      restaurants: schema.db.restaurants
+    };
+  });
+
+  this.get('/search/:id/:loc', function(schema){
+    return {
+      restaurants: schema.db.businesses
+    };
+  });
+
+  // this.post('/mylist/:id', function(schema){
+  //   return {
+  //     restaurants: schema.db.restaurants
+  //   };
+  // });
   /*
     Shorthand cheatsheet:
 

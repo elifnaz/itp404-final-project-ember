@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import ENV from 'itpfin/config/environment'
+import ENV from 'itpfin/config/environment';
 
 export default Ember.Component.extend({
   classNames: ['restaurant'],

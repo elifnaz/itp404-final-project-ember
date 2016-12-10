@@ -1,8 +1,4 @@
 {
-  "name": "itpfin",
-  "engines": {
-    "node": "4.5.0"
-  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",

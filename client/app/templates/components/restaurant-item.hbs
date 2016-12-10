@@ -1,11 +1,9 @@
   <div class="row item">
     <div class="col-md-6">
       <p style="font-size:20px;"><b>{{restaurant.name}}</b></p>
-      <p>{{#if isPopular}}
-        <img style="width: 20px;" src="https://www.emojibase.com/resources/img/emojis/apple/x1f525.png.pagespeed.ic.62QVMlIn1k.png" alt=""/>
+      <p>{{#if isPopular}}<img style="width: 20px;" src="https://www.emojibase.com/resources/img/emojis/apple/x1f525.png.pagespeed.ic.62QVMlIn1k.png" alt=""/>
       {{/if}}</p>
-      <p><b>Number of reviews: </b>
-      {{restaurant.review_count}}</p>
+      <p><b>Number of reviews:</b> {{restaurant.review_count}}</p>
       <p><b>Rating: <img src={{restaurant.rating_img_url_small}} /> </b></p>
     </div>
     <div class="col-md-4">
@@ -16,3 +14,4 @@
       </p>
     </div>
   </div>
+{{yield}}

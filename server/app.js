@@ -40,7 +40,7 @@ var yelp = require('./api/yelp');
 app.use(cors());
 app.use(bodyParser());
 
-app.get('/search/:s/:l', function(request, response) {
+app.get('/api/search/:s/:l', function(request, response) {
   var loc = request.params.l;
   var food = request.params.s;
 

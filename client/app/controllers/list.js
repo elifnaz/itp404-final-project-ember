@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ENV from 'itpfin/config/environment';
 
 export default Ember.Controller.extend({
   actions: {
@@ -11,9 +12,10 @@ export default Ember.Controller.extend({
         alert("You must fill out all values!");
       }
       else {
+        var endPT =  ENV.APP.apiEndpoint;
         Ember.$.ajax({
 					type:'post',
-					url: 'http://localhost:3000/api/mylist',
+					url: endPT + '/api/mylist',
 					data: {
 						name: name,
             city: city

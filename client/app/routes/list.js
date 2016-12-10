@@ -1,7 +1,10 @@
 import Ember from 'ember';
+import ENV from 'itpfin/config/environment';
+
 export default Ember.Route.extend({
 
   model: function() {
-    return Ember.$.getJSON('http://localhost:3000/api/mylist');
+    var endPT =  ENV.APP.apiEndpoint;
+    return Ember.$.getJSON(endPT + '/api/mylist');
   }
 });

@@ -1,1 +1,0 @@
-/Users/elifnazelo/itpfin/client/tmp/funnel-input_base_path-0LFzmJoK.tmp/fake_xml_http_request.js

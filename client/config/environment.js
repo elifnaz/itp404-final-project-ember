@@ -43,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.apiEndpoint = 'http://localhost:3000';
+    ENV.APP.apiEndpoint = 'https://food-picker.herokuapp.com';
 
   }
 

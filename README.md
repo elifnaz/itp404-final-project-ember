@@ -1,7 +1,9 @@
 # Food Picker
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Fooc Picker lets you select a location and displayes restaurants nearby. If the "Feeling Lucky" button is clicked, it chooses a random ZIP code. Users can also add search results or any other restaurants to their favorites list.
+
+Back-end: https://food-picker.herokuapp.com/
+Front-end: http://itpfin.surge.sh/
 
 ## Prerequisites
 

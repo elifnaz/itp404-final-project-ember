@@ -6,7 +6,7 @@ Front-end: http://itpfin.surge.sh/
 
 Back-end: https://food-picker.herokuapp.com
 
-*** 2017 Edit: *** Server's not working since my database hosting expired, will update the database soon!   
+** 2017 Edit: ** Server's not working since my database hosting expired, will update the database soon!   
 
 API end points: 
 
